@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Ebay Automation Script " parallel="methods" thread-count="4">
+
+    <parameter name="platform" value="windows"/>
+    <parameter name="url" value="https://www.ebay.com/"/>
+    <parameter name="url" value="https://www.amazon.com/"/>
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="os" value="windows"/>
+    <parameter name="os_version" value="windows 10"/>
+    <parameter name="browserVersion" value="74.00"/>
+    <parameter name="envName" value="Browserstack"/>
+
+
+    <test name="Ebay Test">
+
+        <classes>
+            <class name="ebay.MyEbayTest"/>
+
+            <class name ="ebay.AmazonTitlePage" />
+        </classes>
+    </test>
+
+</suite>
